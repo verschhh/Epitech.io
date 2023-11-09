@@ -10,7 +10,7 @@ SRC 	=	main.cpp \
 
 OBJ		=	$(SRC:.cpp=.o)
 
-CFLAGS	=	-std=gnu11 -Wall -Wextra -pthread -I include -g3
+CFLAGS	=	-lsfml-graphics -lsfml-window -lsfml-system
 
 NAME	=	epitech.io
 
