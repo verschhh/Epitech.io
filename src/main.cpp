@@ -1,8 +1,10 @@
 #include <SFML/Graphics.hpp>
 
 int main() {
-    sf::RenderWindow window(sf::VideoMode(800, 600), "SFML Window");
-
+    sf::RenderWindow window(sf::VideoMode(1920, 1080), "SFML Window");
+    sf::Texture t;
+    t.loadFromFile("assets/menu_background.png");
+    sf::Sprite s(t);
     while (window.isOpen()) {
         sf::Event event;
         while (window.pollEvent(event)) {
@@ -11,6 +13,7 @@ int main() {
             }
         }
         window.clear();
+        window.draw(s);
         window.display();
     }
 

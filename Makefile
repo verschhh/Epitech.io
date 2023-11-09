@@ -5,8 +5,7 @@
 ## Makefile
 ##
 
-SRC 	=	main.cpp \
-			$(shell find ./src/ -name '*.cpp')
+SRC 	=	$(shell find ./src/ -name '*.cpp') \
 
 OBJ		=	$(SRC:.cpp=.o)
 
